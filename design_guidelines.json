@@ -1,0 +1,114 @@
+{
+  "theme_and_archetype": {
+    "theme": "LIGHT",
+    "archetype": "Archetype 4 (Swiss & High-Contrast)",
+    "vibe": "Industrial, operational, clear, serious, high-contrast, robust",
+    "rationale": "B2B SaaS dashboard for construction procurement teams requiring clear data hierarchy, authority, and functional beauty with a distinctive industrial edge."
+  },
+  "typography": {
+    "fonts": {
+      "headings": "Chivo",
+      "body": "IBM Plex Sans",
+      "mono_labels": "IBM Plex Mono"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl font-black tracking-tighter",
+      "h2": "text-2xl sm:text-3xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-sm sm:text-base leading-relaxed",
+      "small_labels": "text-xs font-mono uppercase tracking-[0.2em]"
+    }
+  },
+  "colors": {
+    "base": {
+      "background": "#FFFFFF",
+      "surface": "#F9FAFB",
+      "border": "#E5E7EB"
+    },
+    "text": {
+      "primary": "#030712",
+      "secondary": "#4B5563",
+      "tertiary": "#9CA3AF"
+    },
+    "brand_accents": {
+      "primary_action": "#111827",
+      "safety_orange": "#FF4500",
+      "warning_yellow": "#FBBF24",
+      "success_green": "#16A34A"
+    },
+    "rules": {
+      "hover_states": "hover:bg-gray-900 hover:text-white for primary, hover:bg-gray-100 for secondary",
+      "focus_states": "focus:ring-2 focus:ring-orange-500 focus:outline-none focus:ring-offset-2",
+      "tinted_grey": "Use cool grays (slate/gray tailwind palette) to keep it industrial."
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-1, p-2, p-4, p-6, p-8, p-12 (Generous padding inside distinct containers)",
+    "grid_system": {
+      "mode": "Mode B: The Control Room Grid",
+      "base": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4",
+      "gap": "gap-4 or gap-6",
+      "rules": "Every pixel must be utilized. Use h-full on children to ensure they stretch to match their neighbors. No jagged bottoms."
+    },
+    "borders_and_radius": {
+      "radius": "rounded-sm (max 4px) to maintain a sharp, industrial, architectural feel.",
+      "surface_strategy": "Grid Borders (The Technical Look). Expose the skeleton. Use border-collapse style layouts where possible with 1px subtle borders (border-border)."
+    }
+  },
+  "components": {
+    "strategy": "Shadcn/UI components heavily customized for industrial look. Go cardless or rectangular/dense styles.",
+    "specific_overrides": {
+      "cards": "Flat background, 1px subtle border, no shadow by default. Hover: slight lift (-translate-y-1) and shadow-md.",
+      "buttons": "Sharp corners (rounded-sm), high contrast. Primary: bg-gray-900 text-white. Secondary: border border-gray-300 bg-transparent text-gray-900.",
+      "inputs": "Solid borders, square-ish radius, clear focus rings (ring-orange-500).",
+      "tables": "Dense, striped rows or solid borders separating rows (border-b), mono font for numerical data.",
+      "tabs": "h-auto, simple underline or flat block style, no pills."
+    },
+    "charts": "Shadcn chart components (Recharts) with monochromatic palettes + safety orange highlight for key metrics.",
+    "testing": "All interactive and key informational elements MUST include a data-testid attribute in kebab-case."
+  },
+  "icons_and_assets": {
+    "library": "lucide-react",
+    "style": "Sharp, technical, consistent stroke width."
+  },
+  "motion_and_interactions": {
+    "hover": "transition-all duration-200 ease-in-out",
+    "lists": "Staggered entrance animations.",
+    "accessibility": "Respect prefers-reduced-motion."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1694521788304-1d42378498da?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwzfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwZW5naW5lZXIlMjB3b3JrZXJ8ZW58MHx8fHwxNzc4NDk0NDIwfDA&ixlib=rb-4.1.0&q=85",
+        "category": "avatar_or_profile",
+        "description": "Construction worker/engineer profile or testimonial avatar."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1685543905636-cdc396ded922?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhYnN0cmFjdCUyMGFyY2hpdGVjdHVyYWwlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3ODQ5NDQzNHww&ixlib=rb-4.1.0&q=85",
+        "category": "login_background",
+        "description": "Black and white architectural buildings photo, used for login page split screen background."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1763771420551-18bc44399f0c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxjZW1lbnQlMjBiYWclMjBzdGVlbCUyMHJlYmFyJTIwY29uc3RydWN0aW9uJTIwbWF0ZXJpYWx8ZW58MHx8fHwxNzc4NDk0NDM0fDA&ixlib=rb-4.1.0&q=85",
+        "category": "material_placeholder",
+        "description": "Coiled steel rebar, used as a placeholder image for inventory items or procurement requests."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1763303775599-08d20753a9ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBhYnN0cmFjdCUyMGFyY2hpdGVjdHVyYWwlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3ODQ5NDQzNHww&ixlib=rb-4.1.0&q=85",
+        "category": "abstract_shape",
+        "description": "Abstract geometric shapes in neutral tones, good for empty states or dashboard banners."
+      }
+    ],
+    "rules": "NEVER use placeholder URLs (via.placeholder.com). ALWAYS use the provided images. Map these URLs accurately to components."
+  },
+  "instructions_to_main_agent": [
+    "Strictly adhere to the typography and layout rules defined.",
+    "Ensure all dashboard widgets stretch to fill grid height.",
+    "Do not use generic SaaS purple or blue gradients; stick to the high-contrast B&W industrial palette with Orange/Yellow accents.",
+    "Implement pure Shadcn components customized with tight borders, rounded-sm, and no soft drop-shadows (unless specified).",
+    "Implement data-testid on every interactive element.",
+    "Use standard JS files (.js/.jsx) as this is a JS project.",
+    "Ensure responsiveness on mobile."
+  ]
+}
